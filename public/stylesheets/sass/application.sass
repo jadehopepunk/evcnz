@@ -2,7 +2,7 @@ body
   margin: 0
   padding: 0
   background-color: #E8DDD5
-  background-image: url(../images/layout/body_outside_background.gif)
+  background-image: url(../images/layout/header_background.gif)
   background-repeat: repeat
   font-family: Helvetica, Arial, sans-serif
   font-size: 100%
@@ -22,7 +22,9 @@ body
   color: white
   
   .wrap1
-    background-image: url(../images/layout/header_inside.jpg)
+    background-image: url(../images/layout/header.jpg)
+    background-position: top center
+    background-repeat: no-repeat
     
     .fixed
       height: 140px
@@ -39,34 +41,33 @@ body
   background-image: url(../images/layout/hero_outside_background.gif)
   background-repeat: repeat
   color: white
-  
+
   .wrap1
     background-image: url(../images/layout/hero_outside_top.jpg)
     background-position: top left
     background-repeat: repeat-x
-    
-    .fixed
-      background-image: url(../images/layout/hero_inside_background.gif)
-      
-      .fixed_inner
-        background-image: url(../images/layout/hero_inside_top.jpg)
-        background-position: top left
-        background-repeat: repeat-x
-        
+
+    .wrap2
+      background-image: url(../images/layout/hero.jpg)
+      background-position: top center
+      background-repeat: repeat-y
+  
+      .wrap3
+        background-image: url(../images/layout/hero_top.jpg)
+        background-position: top center
+        background-repeat: no-repeat
       
 #body
   border-top: 2px solid #F6F2EF
   background-image: url(../images/layout/body_outside_background.gif)
   background-repeat: repeat
+  border-bottom: 6px solid #1F2B1B
   
   .wrap1
-    background-image: url(../images/layout/body_middle.jpg)
+    background-image: url(../images/layout/body.jpg)
     background-repeat: repeat-y
     background-position: top center
-  
-    .fixed
-      height: 400px
-      / background-image: url(../images/layout/body_inside_background.gif)
+    border-bottom: 2px solid black
     
 hr.tab_bar
   margin: 0
@@ -74,4 +75,6 @@ hr.tab_bar
   border: 0
   background-image: url(../images/layout/tab_bar.gif)
   height: 26px
-  
+
+.main
+  width: 600px
