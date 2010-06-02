@@ -1,0 +1,26 @@
+!!! Strict
+%html
+  %head
+    %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
+    %title EVCNZ
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag :defaults
+    = csrf_meta_tag
+  %body
+    #header
+      .wrap1
+        .fixed
+          .fixed_inner
+            header
+    %hr.tab_bar
+    #hero
+      .wrap1
+        .fixed
+          .fixed_inner
+            hero
+    #body
+      .wrap1
+        .fixed
+          .fixed_inner
+            body
+            = yield
