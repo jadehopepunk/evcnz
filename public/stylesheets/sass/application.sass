@@ -6,6 +6,7 @@ body
   background-repeat: repeat
   font-family: Helvetica, Arial, sans-serif
   font-size: 100%
+  font-weight: normal
 
 .fixed
   width: 1000px
@@ -22,10 +23,16 @@ body
   
   .wrap1
     background-image: url(../images/layout/header_inside.jpg)
-    height: 140px
     
     .fixed
       height: 140px
+      
+      h1
+        text-align: right
+        float: right
+        width: 500px
+        margin: 0
+        line-height: 140%
       
 #hero
   background-color: #302824
@@ -39,8 +46,13 @@ body
     background-repeat: repeat-x
     
     .fixed
-      height: 200px
       background-image: url(../images/layout/hero_inside_background.gif)
+      
+      .fixed_inner
+        background-image: url(../images/layout/hero_inside_top.jpg)
+        background-position: top left
+        background-repeat: repeat-x
+        
       
 #body
   border-top: 2px solid #F6F2EF
