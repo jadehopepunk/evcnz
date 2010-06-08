@@ -1,3 +1,12 @@
+=clearfix
+  *display:                 inline-block
+  &:after
+    content:                " "
+    display:                block
+    height:                 0
+    clear:                  both
+    visibility:             hidden
+
 body
   margin: 0
   padding: 0
@@ -7,6 +16,9 @@ body
   font-family: Helvetica, Arial, sans-serif
   font-size: 100%
   font-weight: normal
+
+a, a:link, a:active, a:visited
+  color: #4B5D45
 
 .fixed
   width: 1000px
@@ -78,3 +90,24 @@ hr.tab_bar
 
 .main
   width: 600px
+  
+.preview_list
+  .preview
+    background-color: #F7F4F2
+    border: 2px solid #ECE3DC
+    margin-bottom: 10px
+    padding: 10px
+    
+    h3
+      margin: 0
+      color: #1F2B1B
+      float: left
+    
+    a.community_link
+      float: right
+    
+    .header
+      padding-bottom: 1em
+      +clearfix
+      
+    
