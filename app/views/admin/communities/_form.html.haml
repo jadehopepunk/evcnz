@@ -1,6 +1,25 @@
-- form_for(@community) do |f|
+- form_for @community, :url => [:admin, @community] do |f|
   = f.error_messages
   
+  %p
+    %label Name:
+    %br
+    = f.text_field :name
+  
+  %p
+    %label Url:  
+    %br
+    = f.text_field :url
+
+  %p
+    %label Short Description:
+    %br
+    = f.text_area :short_description
+
+  %p
+    %label Long Description:
+    %br
+    = f.text_area :long_description
 
   .actions
     = f.submit

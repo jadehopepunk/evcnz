@@ -8,9 +8,10 @@
   %tbody
     - for community in @communities
       %tr{ :class => cycle(:odd, :even) }
-        %td= link_to 'Show', community
-        %td= link_to 'Edit', edit_community_path(community)
-        %td= link_to 'Destroy', community, :confirm => 'Are you sure?', :method => :delete
+        %td= community.name
+        %td= link_to 'Show', admin_community_path(community)
+        %td= link_to 'Edit', edit_admin_community_path(community)
+        %td= link_to 'Destroy', admin_community_path(community), :confirm => 'Are you sure?', :method => :delete
 
 %br
-= link_to 'New community', new_community_path
+= link_to 'New community', new_admin_community_path
