@@ -3,75 +3,79 @@ dependencies:
   rails: 
     group: 
     - :default
-    version: = 3.0.0.beta3
-  haml: 
-    group: 
-    - :default
-    version: ">= 0"
+    version: = 3.0.0.beta4
   mysql: 
     group: 
     - :default
     version: ">= 0"
+  haml: 
+    group: 
+    - :default
+    version: = 3.0.12
+  inherited_resources: 
+    group: 
+    - :default
+    version: = 1.1.2
 specs: 
 - rake: 
     version: 0.8.7
 - abstract: 
     version: 1.0.0
+- activesupport: 
+    version: 3.0.0.beta4
 - builder: 
     version: 2.1.2
 - i18n: 
-    version: 0.3.7
-- memcache-client: 
-    version: 1.8.2
-- tzinfo: 
-    version: 0.3.20
-- activesupport: 
-    version: 3.0.0.beta3
+    version: 0.4.1
 - activemodel: 
-    version: 3.0.0.beta3
+    version: 3.0.0.beta4
 - erubis: 
     version: 2.6.5
 - rack: 
     version: 1.1.0
 - rack-mount: 
-    version: 0.6.3
+    version: 0.6.4
 - rack-test: 
-    version: 0.5.3
+    version: 0.5.4
+- tzinfo: 
+    version: 0.3.22
 - actionpack: 
-    version: 3.0.0.beta3
+    version: 3.0.0.beta4
 - mime-types: 
     version: "1.16"
 - polyglot: 
     version: 0.3.1
 - treetop: 
-    version: 1.4.5
+    version: 1.4.8
 - mail: 
-    version: 2.2.0
-- text-hyphen: 
-    version: 1.0.0
-- text-format: 
-    version: 1.0.0
+    version: 2.2.4
 - actionmailer: 
-    version: 3.0.0.beta3
+    version: 3.0.0.beta4
 - arel: 
-    version: 0.3.3
+    version: 0.4.0
 - activerecord: 
-    version: 3.0.0.beta3
+    version: 3.0.0.beta4
 - activeresource: 
-    version: 3.0.0.beta3
+    version: 3.0.0.beta4
 - bundler: 
-    version: 0.9.25
+    version: 0.9.26
 - haml: 
-    version: 2.2.22
+    version: 3.0.12
+- has_scope: 
+    version: 0.5.0
+- responders: 
+    version: 0.6.1
+- inherited_resources: 
+    version: 1.1.2
 - mysql: 
     version: 2.8.1
 - thor: 
-    version: 0.13.4
+    version: 0.13.6
 - railties: 
-    version: 3.0.0.beta3
+    version: 3.0.0.beta4
 - rails: 
-    version: 3.0.0.beta3
-hash: 9dcf3b6c924cedf6fdea67df9c2fca4a81fe1409
+    version: 3.0.0.beta4
+hash: 300d2f29c87bc99f802a738698f73cb74765cb16
 sources: 
 - Rubygems: 
     uri: http://rubygems.org
