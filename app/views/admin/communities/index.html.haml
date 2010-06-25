@@ -9,7 +9,6 @@
     - for community in @communities
       %tr{ :class => cycle(:odd, :even) }
         %td= community.name
-        %td= link_to 'Show', admin_community_path(community)
         %td= link_to 'Edit', edit_admin_community_path(community)
         %td= link_to 'Destroy', admin_community_path(community), :confirm => 'Are you sure?', :method => :delete
 

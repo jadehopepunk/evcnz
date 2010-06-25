@@ -9,4 +9,8 @@
 
 class Community < ActiveRecord::Base
   validates_presence_of :name, :url, :short_description
+  
+  def domain
+    URI.parse(url).host unless url.blank?
+  end
 end

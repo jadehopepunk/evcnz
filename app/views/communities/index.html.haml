@@ -4,18 +4,11 @@
 
 .main
   .communities.preview_list
-    .preview
-      .header
-        %h3 Otamatea Eco-Village
-        = link_to "www.otamatea.org.nz", "http://www.otamatea.org.nz/", :class => 'community_link'
+    - @communities.each do |community|
+      .preview
+        .header
+          %h3= community.name
+          = link_to community.domain, community.url, :class => 'community_link'
         
-      .description
-        Welcome to the Otamatea Eco-Village website. We are a community using organic principles to meet our needs and care for the native eco system. The site has information about our permaculture community and its projects and events.
-
-    .preview
-      .header
-        %h3 Atamai Eco-Village
-        = link_to "www.atamai.co.nz", "http://www.atamai.co.nz/", :class => 'community_link'
-
-      .description
-        Atamai Village is first and foremost a village. By tradition, a village is an enduring, fully- featured settlement, where the full range of human interactions occurs. It offers greater breadth and depth of social and employment opportunities than a suburb, subdivision or even a neighbourhood.
+        .description
+          = community.short_description
