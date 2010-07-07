@@ -6,9 +6,11 @@
   .communities.preview_list
     - @communities.each do |community|
       .preview
-        .header
-          %h3= community.name
-          = link_to community.domain, community.url, :class => 'community_link'
+        = image_tag community.photo.url(:thumb), :class => 'photo'
+        .contents
+          .header
+            = link_to community.domain, community.url, :class => 'community_link'
+            %h3= community.name
         
-        .description
-          = community.short_description
+          .description
+            = community.short_description

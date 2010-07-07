@@ -1,4 +1,4 @@
-- form_for @community, :url => [:admin, @community] do |f|
+- form_for @community, :url => [:admin, @community], :html => { :multipart => true } do |f|
   = f.error_messages
   
   %p
@@ -20,6 +20,11 @@
     %label Long Description:
     %br
     = f.text_area :long_description
+  
+  %p
+    %label Photo:
+    %br
+    = f.file_field :photo
 
   .actions
     = f.submit
