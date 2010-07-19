@@ -20,6 +20,7 @@ namespace :deploy do
 end
 
 after "deploy:update_code" do
+  run "cd #{release_path}; bundle install"
   link_from_shared_to_current('config')
 end
 after "deploy", "deploy:cleanup"

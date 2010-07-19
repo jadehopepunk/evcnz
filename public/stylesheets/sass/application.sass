@@ -30,6 +30,7 @@ h1, h2, h3, h4
 
   .fixed_inner
     padding: 20px
+    
 
 #header
   background-color: #323F2F
@@ -85,15 +86,26 @@ h1, h2, h3, h4
     background-position: top center
     border-bottom: 2px solid black
     
+    .fixed
+      
+      .fixed_inner
+        +clearfix
+    
+        .main
+          width: 600px
+          float: left
+          margin-right: 30px
+
+        .aside
+          width: 330px
+          float: left
+    
 hr.tab_bar
   margin: 0
   padding: 0
   border: 0
   background-image: url(../images/layout/tab_bar.gif)
-  height: 26px
-
-.main
-  width: 600px
+  height: 26px  
   
 .preview_list
   .preview

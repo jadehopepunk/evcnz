@@ -17,3 +17,5 @@ Evcnz::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 end
+
+GOOGLE_MAPS_KEY = "ABQIAAAAPJfrLZh6E1sGVPVZXKgPHBR-8XLKZoraXgc08oHCoCym3kBprxROKOesnvkfCpsl9r5bvGwf426YDA"
