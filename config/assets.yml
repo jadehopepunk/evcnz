@@ -1,0 +1,3 @@
+javascripts:
+  app:
+    - public/javascripts/maps.js

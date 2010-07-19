@@ -5,6 +5,7 @@ gem 'mysql'
 gem 'haml', '3.0.12'
 gem 'inherited_resources', '1.1.2'
 gem 'paperclip'
+gem 'jammit'
 
 # Deploy with Capistrano
 # gem 'capistrano'
