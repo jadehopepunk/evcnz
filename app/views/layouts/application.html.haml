@@ -3,7 +3,7 @@
   %head
     %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
     %title EVCNZ
-    = stylesheet_link_tag 'application'
+    = include_stylesheets :app
     = javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false"
     = include_javascripts :app
     = csrf_meta_tag

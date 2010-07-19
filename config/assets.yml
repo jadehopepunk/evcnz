@@ -1,3 +1,9 @@
 javascripts:
   app:
     - public/javascripts/maps.js
+stylesheets:
+  app:
+    - public/stylesheets/application.css
+  admin:
+    - public/stylesheets/application.css
+    - public/stylesheets/scaffold.css    
