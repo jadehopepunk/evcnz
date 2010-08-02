@@ -1,11 +1,11 @@
+source 'http://gemcutter.org'
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0.beta4'
+gem 'rails', '3.0.0.rc'
 gem 'mysql'
-gem 'haml', '3.0.12'
+gem 'haml', '3.0.15'
 gem 'inherited_resources', '1.1.2'
 gem 'paperclip'
-gem 'jammit'
 
 # Deploy with Capistrano
 # gem 'capistrano'

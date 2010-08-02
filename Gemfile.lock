@@ -1,97 +1,86 @@
---- 
-dependencies: 
-  rails: 
-    group: 
-    - :default
-    version: = 3.0.0.beta4
-  mysql: 
-    group: 
-    - :default
-    version: ">= 0"
-  haml: 
-    group: 
-    - :default
-    version: = 3.0.12
-  inherited_resources: 
-    group: 
-    - :default
-    version: = 1.1.2
-  jammit: 
-    group: 
-    - :default
-    version: ">= 0"
-  paperclip: 
-    group: 
-    - :default
-    version: ">= 0"
-specs: 
-- rake: 
-    version: 0.8.7
-- abstract: 
-    version: 1.0.0
-- activesupport: 
-    version: 3.0.0.beta4
-- builder: 
-    version: 2.1.2
-- i18n: 
-    version: 0.4.1
-- activemodel: 
-    version: 3.0.0.beta4
-- erubis: 
-    version: 2.6.6
-- rack: 
-    version: 1.1.0
-- rack-mount: 
-    version: 0.6.9
-- rack-test: 
-    version: 0.5.4
-- tzinfo: 
-    version: 0.3.22
-- actionpack: 
-    version: 3.0.0.beta4
-- mime-types: 
-    version: "1.16"
-- polyglot: 
-    version: 0.3.1
-- treetop: 
-    version: 1.4.8
-- mail: 
-    version: 2.2.5
-- actionmailer: 
-    version: 3.0.0.beta4
-- arel: 
-    version: 0.4.0
-- activerecord: 
-    version: 3.0.0.beta4
-- activeresource: 
-    version: 3.0.0.beta4
-- bundler: 
-    version: 0.9.26
-- closure-compiler: 
-    version: 0.3.2
-- haml: 
-    version: 3.0.12
-- has_scope: 
-    version: 0.5.0
-- responders: 
-    version: 0.6.1
-- inherited_resources: 
-    version: 1.1.2
-- yui-compressor: 
-    version: 0.9.1
-- jammit: 
-    version: 0.5.1
-- mysql: 
-    version: 2.8.1
-- paperclip: 
-    version: 2.3.3
-- thor: 
-    version: 0.13.8
-- railties: 
-    version: 3.0.0.beta4
-- rails: 
-    version: 3.0.0.beta4
-hash: 3ead30c7136cfba054f6f863d697d1a4a4e478db
-sources: 
-- Rubygems: 
-    uri: http://rubygems.org
+GEM
+  remote: http://gemcutter.org/
+  remote: http://rubygems.org/
+  specs:
+    abstract (1.0.0)
+    actionmailer (3.0.0.rc)
+      actionpack (= 3.0.0.rc)
+      mail (~> 2.2.5)
+    actionpack (3.0.0.rc)
+      activemodel (= 3.0.0.rc)
+      activesupport (= 3.0.0.rc)
+      builder (~> 2.1.2)
+      erubis (~> 2.6.6)
+      i18n (~> 0.4.1)
+      rack (~> 1.2.1)
+      rack-mount (~> 0.6.9)
+      rack-test (~> 0.5.4)
+      tzinfo (~> 0.3.22)
+    activemodel (3.0.0.rc)
+      activesupport (= 3.0.0.rc)
+      builder (~> 2.1.2)
+      i18n (~> 0.4.1)
+    activerecord (3.0.0.rc)
+      activemodel (= 3.0.0.rc)
+      activesupport (= 3.0.0.rc)
+      arel (~> 0.4.0)
+      tzinfo (~> 0.3.22)
+    activeresource (3.0.0.rc)
+      activemodel (= 3.0.0.rc)
+      activesupport (= 3.0.0.rc)
+    activesupport (3.0.0.rc)
+    arel (0.4.0)
+      activesupport (>= 3.0.0.beta)
+    builder (2.1.2)
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
+    haml (3.0.15)
+    has_scope (0.5.0)
+    i18n (0.4.1)
+    inherited_resources (1.1.2)
+      has_scope (~> 0.5.0)
+      responders (~> 0.6.0)
+    mail (2.2.5)
+      activesupport (>= 2.3.6)
+      mime-types
+      treetop (>= 1.4.5)
+    mime-types (1.16)
+    mysql (2.8.1)
+    paperclip (2.3.3)
+      activerecord
+      activesupport
+    polyglot (0.3.1)
+    rack (1.2.1)
+    rack-mount (0.6.9)
+      rack (>= 1.0.0)
+    rack-test (0.5.4)
+      rack (>= 1.0)
+    rails (3.0.0.rc)
+      actionmailer (= 3.0.0.rc)
+      actionpack (= 3.0.0.rc)
+      activerecord (= 3.0.0.rc)
+      activeresource (= 3.0.0.rc)
+      activesupport (= 3.0.0.rc)
+      bundler (>= 1.0.0.rc.1)
+      railties (= 3.0.0.rc)
+    railties (3.0.0.rc)
+      actionpack (= 3.0.0.rc)
+      activesupport (= 3.0.0.rc)
+      rake (>= 0.8.3)
+      thor (~> 0.14.0)
+    rake (0.8.7)
+    responders (0.6.2)
+    thor (0.14.0)
+    treetop (1.4.5)
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.22)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  haml (= 3.0.15)
+  inherited_resources (= 1.1.2)
+  mysql
+  paperclip
+  rails (= 3.0.0.rc)
