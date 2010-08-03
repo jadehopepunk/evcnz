@@ -26,3 +26,5 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+GOOGLE_MAPS_KEY = "ABQIAAAAeBPm_-KwgwjbZtYJENq_NxTsprI-tHzX3qtgBkyBJJgIbKovFhS8p1bCtocLLMKoqDsKRjsFqT6sjQ"
