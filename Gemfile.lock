@@ -4,18 +4,22 @@ dependencies:
     group: 
     - :default
     version: = 2.3.5
-  mysql: 
-    group: 
-    - :default
-    version: ">= 0"
   haml: 
     group: 
     - :default
     version: = 3.0.15
+  mysql: 
+    group: 
+    - :default
+    version: ">= 0"
   inherited_resources: 
     group: 
     - :default
     version: = 1.0.2
+  formtastic: 
+    group: 
+    - :default
+    version: ">= 0"
   will_paginate: 
     group: 
     - :default
@@ -55,6 +59,8 @@ specs:
     version: 0.9.26
 - closure-compiler: 
     version: 0.3.2
+- formtastic: 
+    version: 0.9.8
 - haml: 
     version: 3.0.15
 - has_scope: 
@@ -75,7 +81,7 @@ specs:
     version: 2.3.5
 - will_paginate: 
     version: 2.3.11
-hash: 097218081ed418107c6680226be3818cd1ac8574
+hash: 6aa9acd1443a089e67025dd3cf4b938febd02d74
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

@@ -5,5 +5,8 @@ stylesheets:
   app:
     - public/stylesheets/application.css
   admin:
+    - public/stylesheets/scaffold.css
+    - public/stylesheets/formtastic.css
+    - public/stylesheets/formtastic_overrides.css
     - public/stylesheets/application.css
-    - public/stylesheets/scaffold.css    
+    

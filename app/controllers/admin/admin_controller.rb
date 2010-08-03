@@ -1,5 +1,5 @@
 module Admin
-  class AdminController < ApplicationController
-    inherit_resources
+  class AdminController < InheritedResources::Base
+    layout 'admin'
   end
 end

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100707084303) do
+ActiveRecord::Schema.define(:version => 20100803094630) do
 
   create_table "communities", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(:version => 20100707084303) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
+    t.integer  "latitude",           :limit => 10, :precision => 10, :scale => 0
+    t.integer  "longitude",          :limit => 10, :precision => 10, :scale => 0
   end
 
 end
