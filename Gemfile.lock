@@ -28,6 +28,10 @@ dependencies:
     group: 
     - :default
     version: ">= 0"
+  bundler: 
+    group: 
+    - :default
+    version: = 0.9.26
   responders: 
     group: 
     - :default
@@ -47,6 +51,8 @@ specs:
     version: 2.3.5
 - activeresource: 
     version: 2.3.5
+- bundler: 
+    version: 0.9.26
 - closure-compiler: 
     version: 0.3.2
 - haml: 
@@ -69,7 +75,7 @@ specs:
     version: 2.3.5
 - will_paginate: 
     version: 2.3.11
-hash: 16444fc40a8a515ce9b9b763d6458a89311c914d
+hash: 097218081ed418107c6680226be3818cd1ac8574
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

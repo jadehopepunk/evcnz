@@ -2,6 +2,7 @@
 source :gemcutter
 
 gem 'rails', '2.3.5'
+gem 'bundler', '0.9.26'
 gem 'mysql'
 gem 'haml', '3.0.15'
 gem "inherited_resources", "1.0.2"
