@@ -9,6 +9,8 @@
 #   t.string   "photo_content_type"
 #   t.integer  "photo_file_size"
 #   t.datetime "photo_updated_at"
+#   t.integer  "latitude",           :limit => 10, :precision => 10, :scale => 0
+#   t.integer  "longitude",          :limit => 10, :precision => 10, :scale => 0
 # end
 
 class Community < ActiveRecord::Base
@@ -18,5 +20,9 @@ class Community < ActiveRecord::Base
   
   def domain
     URI.parse(url).host unless url.blank?
+  end
+  
+  def mappable?
+    latitude && longitude
   end
 end
