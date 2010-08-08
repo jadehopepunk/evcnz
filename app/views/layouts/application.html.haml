@@ -2,7 +2,7 @@
 %html
   %head
     %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
-    %title EVCNZ
+    %title Ecovillages and Cohousing in New Zealand
     = include_stylesheets :app
     = include_javascripts :app
     = yield :head
@@ -12,6 +12,9 @@
         .fixed
           .fixed_inner
             %h1 Eco-Village and Cohousing Association of New Zealand
+          %ul.tabs
+            = tab_link "Village List", root_path
+            = tab_link "About", about_path(:action => 'ecovillages')
     %hr.tab_bar
     - hero = yield :hero
     - unless hero.blank?

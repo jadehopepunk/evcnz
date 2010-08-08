@@ -45,6 +45,39 @@ h1, h2, h3, h4
     
     .fixed
       height: 140px
+      position: relative
+      
+      ul.tabs
+        margin: 0
+        padding: 0
+        list-style: none
+        position: absolute
+        bottom: 0
+        
+
+        li
+          display: block
+          width: 105px
+          height: 27px
+          float: left
+          padding: 0
+          margin: 0 5px 0 0
+          
+          a, a:link, a:active, a:visited
+            display: block
+            width: 105px
+            height: 27px
+            background-image: url(../images/layout/tab.png)
+            color: #CCC
+            text-align: center
+            line-height: 27px
+            text-decoration: none
+            
+          a.active
+            background-image: url(../images/layout/tab_highlighted.png)
+            height: 26px
+            margin-top: 1px
+            color: white
       
       h1
         text-align: right
@@ -121,7 +154,7 @@ hr.tab_bar
   border: 0
   background-image: url(../images/layout/tab_bar.gif)
   height: 26px  
-  
+
 .preview_list
   .preview
     background-color: #F7F4F2
