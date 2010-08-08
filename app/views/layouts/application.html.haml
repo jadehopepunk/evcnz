@@ -15,6 +15,7 @@
           %ul.tabs
             = tab_link "Village List", root_path
             = tab_link "About", about_path(:action => 'ecovillages')
+            = tab_link "Contact Us", about_path(:action => 'contact')
     %hr.tab_bar
     - hero = yield :hero
     - unless hero.blank?
@@ -30,3 +31,21 @@
         .fixed
           .fixed_inner
             = yield
+    #footer
+      .wrap1
+        .fixed
+          .fixed_inner
+            .licence
+              %a{:rel => "license", :href => "http://creativecommons.org/licenses/by-sa/3.0/nz/"}
+                %img{:alt => "Creative Commons Licence", :src => "http://i.creativecommons.org/l/by-sa/3.0/nz/88x31.png", :class => "cc_logo"}
+              .cc_text
+                This work is licenced under a
+                = link_to("Creative Commons Licence", "http://creativecommons.org/licenses/by-sa/3.0/nz/", :rel => "license") + '.'
+              .copyright
+                Copyright &copy; EVCNZ 2010
+            .credits
+              .development
+                Site development by 
+                = link_to("Craig Ambrose Ltd", "http://www.craigambrose.com") + '.'
+              .content
+                Content by Peter Scott and Craig Ambrose

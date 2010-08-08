@@ -154,7 +154,25 @@ h1, h2, h3, h4
         .article_page
           .aside
             padding-top: 3em
+
+#footer
+  .fixed_inner
+    +clearfix
+    font-size: 80%
+    line-height: 130%
+    padding-top: 10px
+  
+    .licence
+      float: left
+      width: 500px
+      
+      img.cc_logo
+        float: left
+        margin-right: 10px
     
+    .credits
+      text-align: right
+
 hr.tab_bar
   margin: 0
   padding: 0
@@ -197,13 +215,18 @@ hr.tab_bar
   margin: 0 10px 10px 0
 
 .illustration
-  background-color: black
   border: 2px solid black
   color: white
-
-  image
+  padding: 0
+  background-color: black
   
+  img
+    padding: 0
+    margin: 0
+
   .caption
     text-align: center
     font-weight: normal
     
+#map_canvas
+  border: 2px solid black
