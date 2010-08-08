@@ -3,7 +3,7 @@
   %head
     %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
     %title Ecovillages and Cohousing in New Zealand
-    = include_stylesheets :app
+    = include_stylesheets (admin_page? ? :admin : :app)
     = include_javascripts :app
     = yield :head
   %body
@@ -16,6 +16,7 @@
             = tab_link "Village List", root_path
             = tab_link "About", about_path(:action => 'ecovillages')
             = tab_link "Contact Us", about_path(:action => 'contact')
+            = tab_link("Admin Home", admin_communities_path) if admin_page?
     %hr.tab_bar
     - hero = yield :hero
     - unless hero.blank?
