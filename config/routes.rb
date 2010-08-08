@@ -4,6 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.namespace :admin do |admin|
     admin.resources :communities
   end
+  map.about 'about/:action', :controller => 'about'
   map.root :controller => 'communities', :action => 'index'
 
   # The priority is based upon order of creation: first created -> highest priority.

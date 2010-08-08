@@ -10,11 +10,17 @@ function loadCommunitiesListMap(communities) {
   
   for (var i = 0; i < communities.length; i++) {
     var community = communities[i].community;
-    alert(community.latitude);
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(community.latitude, community.longitude),
       map: map, 
-      title:"Hello World!"
+      title: community.name
+    });
+    var contentString = '<h3>' + community.name + '</h3>' + '<a href="' + community.url + '">Click for more details.</a>';
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
     });
   }
 }

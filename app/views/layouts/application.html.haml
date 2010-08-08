@@ -13,13 +13,15 @@
           .fixed_inner
             %h1 Eco-Village and Cohousing Association of New Zealand
     %hr.tab_bar
-    #hero
-      .wrap1
-        .wrap2
-          .wrap3
-            .fixed
-              .fixed_inner
-                = yield :hero
+    - hero = yield :hero
+    - unless hero.blank?
+      #hero
+        .wrap1
+          .wrap2
+            .wrap3
+              .fixed
+                .fixed_inner
+                  = hero
     #body
       .wrap1
         .fixed

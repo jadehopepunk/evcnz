@@ -2,8 +2,25 @@
   %script{:src => "http://maps.google.com/maps/api/js?sensor=false", :type => "text/javascript"}
 
 - content_for :hero do
-  %h2 What is an ecovillage?
-  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consequat elit ac orci elementum vulputate. Vivamus suscipit eleifend fermentum. Suspendisse potenti. Pellentesque et magna nibh, vel placerat felis. Nunc a nunc non dolor venenatis lacinia ac id urna. Integer lacus lorem, molestie eu malesuada at, aliquam ut quam. Maecenas viverra porttitor nibh, in ornare nunc varius sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed leo quam, rhoncus at porttitor in, hendrerit et ante. Phasellus ac sagittis diam. Suspendisse vitae justo risus, ac scelerisque enim. Donec auctor mi eget justo tincidunt non euismod sem luctus. Etiam dapibus varius eros quis mollis. Phasellus vitae arcu eget turpis vehicula facilisis. Ut fringilla bibendum nisl eget congue. Nunc justo neque, aliquet vitae commodo sed, consequat quis dolor. Etiam dui quam, volutpat non sollicitudin vel, porttitor id quam. Etiam iaculis pulvinar eros, id mattis massa fringilla eget. Suspendisse tristique odio sed orci dictum luctus. Aliquam auctor, ante eget fringilla iaculis, augue dolor ullamcorper dui, at semper nisi urna et tellus. 
+  %p
+    %span.strong1
+      %span.strong3 Ecovillages
+      are residential 
+      %span.strong2 communities 
+      with the goal of becoming more 
+      %span.strong3 socially, 
+      %span.strong3 economically
+      and 
+      %span.strong3 ecologically
+      sustainable.
+  %p
+    Ecovillages are created for a variety of different reasons, and
+    might be structured in vastly different ways. Ecovillages can certainly include communes and 
+    co-operatives, but most ecovillages in New Zealand consist of privately owned homes, with some
+    shared facilities and a shared purpose to create livable and environmentally responsible human
+    settlement...
+  
+    = link_to "READ MORE", :controller => 'about', :action => 'ecovillages'
 
 .main
   .communities.preview_list
