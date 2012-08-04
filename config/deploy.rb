@@ -1,8 +1,11 @@
+require "bundler/capistrano"
+
 set :application, "evcnz"
 set :repository,  "git@github.com:craigambrose/evcnz.git"
 set :deploy_to, "/home/ttnz/public_html/#{application}"
 set :destination, "livingmodels.tt.craigambrose.com"
 set :user, 'ttnz'
+set :use_sudo, false
 
 set :scm, :git
 
@@ -15,12 +18,11 @@ namespace :deploy do
   task :start do ; end
   task :stop do ; end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
 
 after "deploy:update_code" do
-  run "cd #{release_path}; bundle install"
   link_from_shared_to_current('config')
 end
 after "deploy", "deploy:cleanup"

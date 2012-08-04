@@ -15,6 +15,12 @@ GEM
     activeresource (2.3.14)
       activesupport (= 2.3.14)
     activesupport (2.3.14)
+    capistrano (2.9.0)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     cocaine (0.2.1)
     formtastic (1.1.0)
       actionpack (>= 2.3.0)
@@ -22,6 +28,7 @@ GEM
       i18n (>= 0.4.0)
     haml (3.0.15)
     has_scope (0.5.1)
+    highline (1.6.9)
     i18n (0.6.0)
     inherited_resources (1.0.2)
       has_scope (>= 0.4)
@@ -30,6 +37,13 @@ GEM
       yui-compressor (>= 0.9.3)
     mime-types (1.19)
     mysql (2.8.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.3.0)
+    net-ssh-gateway (1.1.0)
+      net-ssh (>= 1.99.1)
     open4 (1.0.1)
     paperclip (2.7.0)
       activerecord (>= 2.3.0)
@@ -54,6 +68,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  capistrano
   formtastic
   haml (= 3.0.15)
   inherited_resources (= 1.0.2)

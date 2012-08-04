@@ -10,3 +10,6 @@ gem 'paperclip'
 gem 'jammit'
 gem "will_paginate", '~> 2.3.16'
 
+group :development do
+  gem 'capistrano'
+end
